@@ -1,23 +1,78 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package lenguajes.josueolvera;
+package tarealenguajesorientados;
 
 /**
  *
- * @author T-107
+ * @author alexander
  */
-public class LenguajesJosueolvera {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        System.out.println("Linea Modificada");  
-      
-        
+public abstract class Persona {
+    private String nombre;
+    private int  edad;
+    private double altura;
+    private float peso;
+    private String correo;
+    private int numero;
+    public double imc;
+    
+    public Persona(){}
+    
+    public void peso(){
+        System.out.println("El peso de"+nombre+"es:"+peso);
     }
     
+     public void masaCorporal(){
+         imc=peso/(altura*altura);
+         System.out.println("La masa corporal es:"+imc );
+     }
+    
+    public void setNombre(String s){
+        nombre = s;
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
+    public void setEdad(int e){
+        edad = e;
+    }
+    
+    public int getEdad(){
+        return edad;
+    }
+    
+    public void setAltura(double a){
+        altura = a;
+    }
+    
+    public double getAltura(){
+        return altura;
+    }
+    
+    public void setPeso(float p){
+        peso = p;
+    }
+    
+    public float getPeso(){
+        return peso;
+    }
+    
+    public void setCorreo(String c){
+        correo = c;
+    }
+    
+    public String getCorreo(){
+        return correo;
+    }
+    
+    public void setNumero(int n){
+        numero = n;
+    }
+    
+    public int getNumero(){
+        return numero;
+    }
 }
