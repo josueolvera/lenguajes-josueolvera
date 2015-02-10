@@ -17,7 +17,7 @@ public class MainTest2 {
     public static void main(String[] args) {
         Rectangulo3 x = new Rectangulo3(5);
         
-        Rectangulo3 y = new Rectangulo3();
+      //  Rectangulo3 y = new Rectangulo3();
         /*
         Aqui estaria mal por que al agregar un constructor desaparece el 
         consttructor por defecto

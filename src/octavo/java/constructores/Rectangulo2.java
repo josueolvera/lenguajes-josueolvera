@@ -19,7 +19,7 @@ public class Rectangulo2 {
         this.ladoMayor = ladoMayor;
     }
 
-    public Rectangulo2(int ladoMenor) { 
+   /* public Rectangulo2(int ladoMenor) { 
         this.ladoMenor = ladoMenor;
     }
     /*
