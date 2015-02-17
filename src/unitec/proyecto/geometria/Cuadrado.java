@@ -35,8 +35,15 @@ public class Cuadrado {
         return lado;
     }
 
-    public void setLado(float lado) {
-        this.lado = lado;
+    public void setLado(float lado) throws PruebaExcepcion {
+          if(lado>0.0f){
+          this.lado=lado;
+          
+      }
+        
+        if(lado<0.0f){ 
+        throw new PruebaExcepcion("No se permiten datos Negativos, Tonto");
+       }
     }
     
 }

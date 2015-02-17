@@ -5,6 +5,9 @@
  */
 package unitec.proyecto.geometria;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author T-107
@@ -111,6 +114,10 @@ public class ProyectoGeometria extends javax.swing.JFrame {
         etiquetaResultado.setText("El area es: "+ c.calcularArea());
         }catch(NumberFormatException e){
             etiquetaResultado.setText(e.getMessage());
+        } catch (PruebaExcepcion ex) {
+            etiquetaResultado.setText(ex.getMessage());
+            System.out.println("No se pudo calular el area debido a:"
+            +ex.getMessage());
         }
     }//GEN-LAST:event_botonCalcularAreaActionPerformed
 
