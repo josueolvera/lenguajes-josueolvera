@@ -16,10 +16,14 @@ public class Cuadrado {
      * Este constructor tiene un argumento de tipo flotante
      * @param lado El parametro que debes ingresar es el valor
      * del lado de tu cuadrado
+     * @throws unitec.proyecto.geometria.NumeroNoNegativoException
+     * @throws unitec.proyecto.geometria.RangoInvalidoException
      */
     
-    public Cuadrado(float lado) throws NumeroNoNegativoException{
+    public Cuadrado(float lado) throws NumeroNoNegativoException,RangoInvalidoException{
+
         ValidarValorNoNegativo.validar(lado);
+        ValidarRango.validar(lado);
         this.lado=lado;
     }
     
@@ -36,8 +40,10 @@ public class Cuadrado {
         return lado;
     }
 
-    public void setLado(float lado) throws NumeroNoNegativoException  {
+    public void setLado(float lado) throws NumeroNoNegativoException,RangoInvalidoException  {
+        
           ValidarValorNoNegativo.validar(lado);
+          ValidarRango.validar(lado);
           this.lado=lado;
             }
 }
