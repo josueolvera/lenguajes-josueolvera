@@ -18,7 +18,8 @@ public class Cuadrado {
      * del lado de tu cuadrado
      */
     
-    public Cuadrado(float lado){
+    public Cuadrado(float lado) throws NumeroNoNegativoException{
+        ValidarValorNoNegativo.validar(lado);
         this.lado=lado;
     }
     
@@ -35,15 +36,8 @@ public class Cuadrado {
         return lado;
     }
 
-    public void setLado(float lado) throws PruebaExcepcion {
-          if(lado>0.0f){
+    public void setLado(float lado) throws NumeroNoNegativoException  {
+          ValidarValorNoNegativo.validar(lado);
           this.lado=lado;
-          
-      }
-        
-        if(lado<0.0f){ 
-        throw new PruebaExcepcion("No se permiten datos Negativos, Tonto");
-       }
-    }
-    
+            }
 }

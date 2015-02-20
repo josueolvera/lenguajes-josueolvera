@@ -112,13 +112,9 @@ public class ProyectoGeometria extends javax.swing.JFrame {
         Cuadrado c = new Cuadrado();
         c.setLado(Float.parseFloat(textoLado.getText()));
         etiquetaResultado.setText("El area es: "+ c.calcularArea());
-        }catch(NumberFormatException e){
+        }catch(Exception e){//TAMBIEN SE PUEDE CON THROWALE POR QUE ES LA MADRE DE LAS EXCEPCIONES 
             etiquetaResultado.setText(e.getMessage());
-        } catch (PruebaExcepcion ex) {
-            etiquetaResultado.setText(ex.getMessage());
-            System.out.println("No se pudo calular el area debido a:"
-            +ex.getMessage());
-        }
+        } //ES EL MENSAJE QUE MANDAMOS EN EL CONSTRUCTOR
     }//GEN-LAST:event_botonCalcularAreaActionPerformed
 
     /**
