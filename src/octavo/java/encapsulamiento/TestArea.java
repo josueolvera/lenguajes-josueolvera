@@ -5,6 +5,8 @@
  */
 package octavo.java.encapsulamiento;
 
+import unitec.proyecto.geometria.Rectangulo;
+
 /**
  *
  * @author alexander
@@ -20,10 +22,13 @@ public class TestArea {
       
       System.out.println("Area Cuadrado:"+c.calcularArea());
       
-      Rectangulo r = new Rectangulo();
+     /* Rectangulo r = new Rectangulo();
       r.setAltura(2);
       r.setBase(5);
       System.out.println("Area Rectangulo"+r.calcularR());
+    }
+    
+             */
     }
     
 }

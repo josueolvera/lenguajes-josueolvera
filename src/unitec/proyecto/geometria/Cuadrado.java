@@ -9,7 +9,7 @@ package unitec.proyecto.geometria;
  *
  * @author T-107
  */
-public class Cuadrado {
+public class Cuadrado implements Superficies {
     private float lado;
     
     /**
@@ -31,7 +31,7 @@ public class Cuadrado {
     
 }
     
-    float calcularArea(){
+    public float calcularArea(){
         float area=lado*lado;
         return area;
     }
