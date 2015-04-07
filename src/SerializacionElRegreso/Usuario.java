@@ -3,31 +3,34 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Serializacion;
+package SerializacionElRegreso;
 
 import java.io.Serializable;
 
 /**
  *
- * @author T-301
+ * @author T-107
  */
-public class Cliente implements Serializable{
-    private String nombre;
+public class Usuario implements Serializable{
+  private String nombre;
     private float sueldo;
-    private Direccion direccion;
+    private String email;
 
-    public Cliente(String nombre, float sueldo, Direccion direccion) {
+    public Usuario() {
+    }
+    
+    public Usuario(String nombre, float sueldo, String email) {
         this.nombre = nombre;
         this.sueldo = sueldo;
-        this.direccion = direccion;
+        this.email = email;
     }
 
-    public Direccion getDireccion() {
-        return direccion;
+    public String getEmail() {
+        return email;
     }
 
-    public void setDireccion(Direccion direccion) {
-        this.direccion = direccion;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getNombre() {
@@ -45,4 +48,5 @@ public class Cliente implements Serializable{
     public void setSueldo(float sueldo) {
         this.sueldo = sueldo;
     }
+  
 }
